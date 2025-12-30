@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michał Pielech | QA Engineer Portfolio</title>
+  <style>
+  
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(135deg, #2563eb, #cf6f02);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 { font-size: 3rem; margin-bottom: 12px; }
+header p { font-size: 1.2rem; max-width: 900px; margin: 0 auto; opacity: 0.9; }
+
+section { max-width: 1100px; margin: 0 auto; padding: 70px 20px; }
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+  color: #cf6f02;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -10px;
+  width: 70px; height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  border-radius: 4px;
+}
+
+h3 { font-size: 1.3rem; margin-bottom: 10px; color: #cf6f02; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: linear-gradient(180deg, #0b1e3d, #07152d);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(96,165,250,0.45),
+    0 0 24px rgba(59,130,246,0.45);
+  border-color: rgba(96,165,250,0.6);
+}
+
+.grid .card:nth-child(3n+1) {
+  background: linear-gradient(180deg, #0b1e3d, #07152d);
+}
+
+.grid .card:nth-child(3n+2) {
+  background: linear-gradient(180deg, #0a254f, #071b3a);
+  border-color: rgba(6,182,212,0.25);
+}
+
+.grid .card:nth-child(3n+3) {
+  background: linear-gradient(180deg, #0c2b6a, #081f46);
+  border-color: rgba(147,197,253,0.3);
+}
+
+ul { padding-left: 20px; }
+ul li { margin-bottom: 8px; }
+ul li::marker { color: #60a5fa; }
+
+a { color: #93c5fd; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.skill { margin-bottom: 18px; }
+.skill span { display: block; margin-bottom: 6px; font-size: 0.95rem; }
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #020617;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  border-radius: 10px;
+}
+
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.9rem;
+  color: #9ca3af;
+  background: linear-gradient(135deg, #2563eb, #cf6f02);
+}
+
+@media (max-width: 768px) {
+  header h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.9rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Michał Pielech</h1>
+  <p>Senior Manual QA Technician / QA Engineer · 6+ lat doświadczenia · Transition to Automation QA</p>
+</header>
+
+<section>
+  <h2>O mnie</h2>
+  <p>
+    Jestem QA Engineerem z ponad 6-letnim doświadczeniem w testach manualnych aplikacji oraz gier na platformach
+    PC, konsole, VR, mobile i web. Specjalizuję się w testach funkcjonalnych, regresyjnych, eksploracyjnych,
+    użyteczności oraz zgodności platformowej (PlayStation, Xbox, Nintendo).
+  </p>
+  <p>
+    Aktualnie studiuję Informatykę (Software Engineering) oraz aktywnie rozwijam się w kierunku Automation QA,
+    ucząc się Java, Playwright oraz testów API.
+  </p>
+</section>
+
+<section>
+  <h2>Doświadczenie zawodowe</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Testronic – Senior Manual QA Technician</h3>
+      <p><strong>05.2022 – obecnie</strong></p>
+      <ul>
+        <li>Manualne testy gier i aplikacji na platformach PC, PlayStation 4/5, Xbox One / Series X|S, Nintendo, VR oraz mobile</li>
+        <li>Testy funkcjonalne, regresyjne, eksploracyjne, re-testy oraz testy użyteczności i UI/UX</li>
+        <li>Testy wydajnościowe, kompatybilności, lokalizacyjne oraz platform compliance (TRC / XR / LOT)</li>
+        <li>Zgłaszanie i analiza defektów z wykorzystaniem Jira, TestRail, Zephyr, Trello (pełne kroki reprodukcji, logi, wideo)</li>
+        <li>Tworzenie, utrzymanie i wykonywanie przypadków testowych oraz raportów jakości</li>
+        <li>Ścisła współpraca z zespołami developerskimi, producentami i innymi zespołami QA</li>
+        <li>Wsparcie UAT oraz testów Beta</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Testlio / Test.io – Freelance QA Tester</h3>
+      <p><strong>07.2025 – obecnie (weekendowo)</strong></p>
+      <ul>
+        <li>Manualne, eksploracyjne i regresyjne testy aplikacji webowych oraz mobilnych</li>
+        <li>Testy UI/UX na różnych urządzeniach, rozdzielczościach i wersjach systemów operacyjnych</li>
+        <li>Testowanie aplikacji e-commerce, fintech oraz bankowych</li>
+        <li>Walidacja płatności, procesów autoryzacji (2FA, OTP) oraz workflow zgodności</li>
+        <li>Testy ETL – weryfikacja poprawności, spójności danych i integracji systemów</li>
+        <li>Raportowanie defektów i walidacja poprawek poprzez platformę Testlio</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Testronic – Manual QA Technician</h3>
+      <p><strong>03.2019 – 05.2022</strong></p>
+      <ul>
+        <li>Strukturalne i eksploracyjne testy produktów mobilnych i konsolowych</li>
+        <li>Testy kompatybilności, wydajności, lokalizacji oraz zgodności platformowej</li>
+        <li>Wykonywanie i utrzymanie przypadków testowych</li>
+        <li>Wsparcie testów UAT i Beta</li>
+        <li>Współpraca z zespołami developerskimi przy analizie i rozwiązywaniu defektów</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Testronic – Customer Support</h3>
+      <p><strong>01.2017 – 03.2019</strong></p>
+      <ul>
+        <li>Wsparcie graczy poprzez e-mail, live chat i systemy ticketowe (PL / EN)</li>
+        <li>Rozwiązywanie problemów technicznych i eskalacja do zespołów QA / Development</li>
+        <li>Zarządzanie CRM, logowanie błędów oraz utrzymanie bazy wiedzy</li>
+        <li>Bliska współpraca z zespołami produkcyjnymi w celu poprawy user experience</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Kluczowe projekty</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Assassin’s Creed Nexus VR (Ubisoft)</h3>
+      <ul>
+        <li>Testy Alpha i Beta na Oculus Quest 1/2</li>
+        <li>Identyfikacja problemów VR (tracking, UI, komfort gracza)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Farming Simulator 22 / 23 / 25 (GIANTS Software)</h3>
+      <ul>
+        <li>Senior Manual QA Technician</li>
+        <li>Lider zespołu QA (core gameplay, multiplayer)</li>
+        <li>On-site QA training – Brno (Czechy)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Umiejętności</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>QA & Testing</h3>
+
+      <div class="skill">
+        <span>Manual Testing (Functional / Regression / Exploratory)</span>
+        <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Test Case Design & Execution</span>
+        <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Platform Compliance (PS / Xbox / Nintendo)</span>
+        <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Performance / Compatibility / Localization</span>
+        <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Test Management</h3>
+      <ul>
+        <li>Tworzenie, przegląd i utrzymanie przypadków testowych</li>
+        <li>Planowanie i wykonywanie testów</li>
+        <li>Bug tracking, raportowanie i analiza defektów</li>
+        <li>Raporty jakości i feedback produktowy</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Automation & API</h3>
+
+      <div class="skill">
+        <span>API Testing (Postman / REST)</span>
+        <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>SQL & Database Validation</span>
+        <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Automation QA (Playwright)</span>
+        <div class="bar"><div class="bar-fill" style="width:65%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Java (Test Automation)</span>
+        <div class="bar"><div class="bar-fill" style="width:60%"></div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Programowanie & Bazy Danych</h3>
+      <ul>
+        <li>Java, JavaScript, SQL, JQL</li>
+        <li>HTML5, CSS3</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>CI/CD & Version Control</h3>
+      <ul>
+        <li>Git, GitHub, GitLab, Bitbucket</li>
+        <li>Podstawy CI/CD i koncepcji DevOps</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Narzędzia</h3>
+      <ul>
+        <li>Jira, TestRail, Zephyr, Confluence</li>
+        <li>Mantis, Bugzilla, Trello</li>
+        <li>GameBench, JMeter</li>
+        <li>DevTools, Slack, MS Teams, Skype</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Metodyki & Soft Skills</h3>
+      <ul>
+        <li>Agile: Scrum, Kanban</li>
+        <li>Znajomość SDLC</li>
+        <li>Attention to Detail, Critical Thinking</li>
+        <li>Problem Solving, Communication</li>
+        <li>Team Collaboration, Adaptability, Time Management</li>
+        <li>User-Centric Mindset</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Certyfikaty & Kursy</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Certyfikaty</h3>
+      <ul>
+        <li>ISTQB Certified Tester Foundation Level (CTFL) – GASQ</li>
+        <li>ISTQB Certified Tester Agile Tester (CTFL-AT) – GASQ</li>
+        <li>Postman API Fundamentals Student Expert – Postman Academy</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Kursy specjalistyczne</h3>
+      <ul>
+        <li>How to Become a Software Tester – Manual Testing (Strefakursów)</li>
+        <li>Software Testing in Practice – Techniques and Tools (Strefakursów)</li>
+        <li>Manual Software Testing: Complete Course with Practical Labs (Udemy)</li>
+        <li>Practical Software Testing 2025 – Manual + JIRA + API + DB + Selenium (Udemy)</li>
+        <li>API Beginner Learning Path – Postman Academy</li>
+        <li>API Testing Learning Path – Postman Academy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt</h2>
+  <p>📍 Józefów, Polska</p>
+  <p>📧 <a href="mailto:mipiel11@gmail.com">mipiel11@gmail.com</a></p>
+  <p>📞 +48 500 207 724</p>
+  <p>🔗 <a href="https://www.linkedin.com/in/micha%C5%82-pielech-467427266" target="_blank">LinkedIn</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Michał Pielech · QA Engineer Portfolio</p>
+</footer>
+
+</body>
+</html>

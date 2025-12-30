@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usługi Lokalnie | Profesjonalne Usługi</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0b1220;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #16a34a, #065f46);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: linear-gradient(90deg, #22c55e, #4ade80);
+      color: #022c22;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(34,197,94,0.8);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #60a5fa;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #052e2b, #022c22);
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid rgba(74,222,128,0.35);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(74,222,128,0.5);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #bfdbfe;
+    }
+
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 8px; }
+
+    .about {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 14px;
+      background: linear-gradient(90deg, #3b82f6, #06b6d4);
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 30px 20px;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+	
+    details ul {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.4s ease, opacity 0.3s ease;
+    }
+
+   details[open] ul {
+   max-height: 500px;
+   opacity: 1;
+   }
+   
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      .about { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Profesjonalne Usługi Lokalnie</h1>
+  <p>Świadczymy solidne i terminowe usługi dla klientów indywidualnych oraz firm na terenie Twojego miasta.</p>
+
+  <details id="menu" style="margin-top:30px; max-width:420px; margin-left:auto; margin-right:auto;">
+    <summary style="cursor:pointer; font-weight:600; color:#ecfeff;">Przejdź do sekcji strony</summary>
+    <ul style="margin-top:15px; list-style:none; padding-left:0;">
+      <li><a href="#" class="btn" style="margin-bottom:10px; display:inline-block;">Strona główna</a></li>
+      <li><a href="#uslugi" class="btn" style="margin-bottom:10px; display:inline-block;">Usługi</a></li>
+      <li><a href="#onas" class="btn" style="margin-bottom:10px; display:inline-block;">O nas</a></li>
+      <li><a href="#admin" class="btn" style="margin-bottom:10px; display:inline-block;">Panel administracyjny</a></li>
+      <li><a href="#kontakt" class="btn" style="display:inline-block;">Kontakt</a></li>
+    </ul>
+  </details>
+
+  
+</header>
+
+<section id="uslugi">
+  <h2>Nasze usługi</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Usługi podstawowe</h3>
+      <ul>
+        <li>Profesjonalna realizacja zleceń</li>
+        <li>Indywidualne podejście do klienta</li>
+        <li>Gwarancja jakości</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Serwis i konserwacja</h3>
+      <ul>
+        <li>Regularne przeglądy</li>
+        <li>Szybka reakcja na zgłoszenia</li>
+        <li>Wsparcie techniczne</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Usługi awaryjne</h3>
+      <ul>
+        <li>Pomoc w nagłych sytuacjach</li>
+        <li>Dostępność w weekendy</li>
+        <li>Szybki czas realizacji</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Doradztwo i wycena</h3>
+      <ul>
+        <li>Bezpłatna konsultacja</li>
+        <li>Transparentna wycena</li>
+        <li>Doradztwo techniczne</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Modernizacje</h3>
+      <ul>
+        <li>Unowocześnianie istniejących rozwiązań</li>
+        <li>Zwiększanie wydajności</li>
+        <li>Dostosowanie do nowych standardów</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Obsługa stała</h3>
+      <ul>
+        <li>Umowy długoterminowe</li>
+        <li>Priorytetowa obsługa</li>
+        <li>Stały kontakt z opiekunem</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="onas">
+  <h2>O nas</h2>
+  <div class="about">
+    <div>
+      <p>Jesteśmy lokalną firmą z wieloletnim doświadczeniem. Stawiamy na jakość, rzetelność oraz dobrą komunikację z klientem.</p>
+      <p>Każde zlecenie realizujemy z dbałością o szczegóły i zgodnie z ustalonym harmonogramem.</p>
+    </div>
+  </div>
+</section>
+
+<section id="admin">
+  <h2>Panel administracyjny</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Logowanie administratora</h3>
+      <form onsubmit="return false;">
+        <input type="text" placeholder="Login" required
+               oninvalid="this.setCustomValidity('Please fill out this field')"
+               oninput="this.setCustomValidity('')" />
+        <input type="password" placeholder="Hasło" required
+               oninvalid="this.setCustomValidity('Please fill out this field')"
+               oninput="this.setCustomValidity('')" />
+        <p style="font-size:0.9rem; color:#86efac;">Aby się zalogować, wpisz login i hasło.</p>
+        <button type="button">Zaloguj</button>
+      </form>
+    </div>
+    <div class="card">
+      <h3>Zarządzanie treścią</h3>
+      <ul>
+        <li>Edycja treści strony</li>
+        <li>Dodawanie / usuwanie usług</li>
+        <li>Podgląd zgłoszeń kontaktowych</li>
+      </ul>
+      <p><em>Panel demonstracyjny do celów portfolio</em></p>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <div class="grid">
+    <div class="card">
+      <p><strong>Telefon:</strong> +48 000 000 000</p>
+      <p><strong>Email:</strong> kontakt@uslugilokalne.pl</p>
+      <p><strong>Lokalizacja:</strong> Twoje miasto</p>
+    </div>
+    <div class="card">
+      <form>
+        <input type="text" placeholder="Imię i nazwisko" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="4" placeholder="Wiadomość" required></textarea>
+        <button type="submit">Wyślij wiadomość</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Usługi Lokalne · Wszystkie prawa zastrzeżone</p>
+</footer>
+
+<script>
+  const details = document.getElementById("menu");
+  const summary = details.querySelector("summary");
+  const content = details.querySelector("ul");
+
+  summary.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    if (details.open) {
+      // ZAMYKANIE (animacja → zamknięcie)
+      content.style.height = content.scrollHeight + "px";
+      requestAnimationFrame(() => {
+        content.style.height = "0";
+        content.style.opacity = "0";
+      });
+
+      setTimeout(() => {
+        details.open = false;
+      }, 400); // MUSI się zgadzać z CSS transition
+    } else {
+      // OTWIERANIE
+      details.open = true;
+      content.style.height = content.scrollHeight + "px";
+      content.style.opacity = "1";
+    }
+  });
+</script>
+
+</body>
+</html>

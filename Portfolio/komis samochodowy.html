@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoKomis Premium</title>
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background:#f5f5f5; color:#333; }
+    header { background:#111; color:#fff; padding:20px; }
+    header h1 { margin:0; }
+    nav a { color:#fff; margin-right:15px; text-decoration:none; font-weight:bold; }
+    .hero { background:linear-gradient(135deg, #111 0%, #333 100%); color:#fff; padding:80px 20px; text-align:center; }
+    .hero h2 { font-size:36px; margin-bottom:10px; }
+    .section { padding:40px 20px; max-width:1100px; margin:auto; }
+    .cars { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+    .car { background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden; }
+    .car img { width:100%; height:160px; object-fit:cover; }
+    .car .info { padding:15px; }
+    .car .info h3 { margin:0 0 10px; }
+    .contact { background:#fff; border-radius:8px; padding:20px; }
+    footer { background:#111; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+    button { background:#d32f2f; color:#fff; border:none; padding:10px 16px; border-radius:4px; cursor:pointer; }
+    button:hover { background:#b71c1c; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AutoKomis Premium</h1>
+    <nav>
+      <a href="#oferta">Oferta</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Sprawdzone samochody z gwarancją</h2>
+    <p>Skup • Sprzedaż • Zamiana • Kredyt</p>
+    <button>Sprawdź ofertę</button>
+  </section>
+
+  <section id="oferta" class="section">
+    <h2>Nasza oferta</h2>
+    <div class="cars">
+      <div class="car">
+        
+        <div class="info">
+          <h3>BMW Seria 3</h3>
+          <p>2019 • Diesel • 120 000 km</p>
+          <strong>79 900 zł</strong>
+        </div>
+      </div>
+      <div class="car">
+        
+        <div class="info">
+          <h3>Audi A4</h3>
+          <p>2018 • Benzyna • 98 000 km</p>
+          <strong>74 500 zł</strong>
+        </div>
+      </div>
+      <div class="car">
+        
+        <div class="info">
+          <h3>Volkswagen Passat</h3>
+          <p>2020 • Diesel • 85 000 km</p>
+          <strong>89 000 zł</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="o-nas" class="section">
+    <h2>O nas</h2>
+    <p>Jesteśmy komisem samochodowym z wieloletnim doświadczeniem. Oferujemy tylko sprawdzone auta z pewnego źródła. Każdy samochód przechodzi dokładną kontrolę techniczną.</p>
+  </section>
+
+  <section id="kontakt" class="section">
+    <h2>Kontakt</h2>
+    <div class="contact">
+      <p><strong>Adres:</strong> ul. Przykładowa 12, 00-000 Warszawa</p>
+      <p><strong>Telefon:</strong> 600 000 000</p>
+      <p><strong>Email:</strong> kontakt@autokomis.pl</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 AutoKomis Premium. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>

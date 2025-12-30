@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taste of India – Restauracja Indyjska</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fff8ef;
+      color: #333;
+    }
+
+    nav {
+      background-color: #8b0000;
+      padding: 12px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #8b0000;
+      min-width: 180px;
+      left: 0;
+      top: 30px;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #a80000;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1604908177522-040c7b3d4c0a') center/cover no-repeat;
+      height: 70vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2, h3 {
+      color: #8b0000;
+    }
+
+    .menu, .order-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #8b0000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">O nas</a>
+
+    <div class="dropdown">
+      <a href="#menu">Menu ▾</a>
+      <div class="dropdown-content">
+        <a href="#starters">Przystawki</a>
+        <a href="#mains">Dania główne</a>
+        <a href="#vege">Wegetariańskie</a>
+        <a href="#breads">Chleby</a>
+        <a href="#drinks">Napoje</a>
+      </div>
+    </div>
+
+    <a href="#order">Zamów</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <header>
+    <h1>Taste of India<br>Autentyczna kuchnia indyjska</h1>
+  </header>
+
+  <section id="about">
+    <h2>O nas</h2>
+    <p>
+      Taste of India to restauracja oferująca autentyczne smaki Indii – aromatyczne curry,
+      świeże przyprawy i tradycyjne receptury przygotowywane przez doświadczonych kucharzy.
+    </p>
+  </section>
+
+  <section id="menu">
+    <h2>Nasze Menu</h2>
+
+    <h3 id="starters">Przystawki</h3>
+    <div class="menu">
+      <div class="card"><strong>Samosa</strong><p>Pierożki z warzywami</p>14 zł</div>
+      <div class="card"><strong>Onion Bhaji</strong><p>Cebula w cieście</p>16 zł</div>
+    </div>
+
+    <h3 id="mains">Dania główne</h3>
+    <div class="menu">
+      <div class="card"><strong>Chicken Tikka Masala</strong><p>Kremowy sos curry</p>38 zł</div>
+      <div class="card"><strong>Butter Chicken</strong><p>Sos maślano-pomidorowy</p>36 zł</div>
+      <div class="card"><strong>Lamb Rogan Josh</strong><p>Jagnięcina curry</p>42 zł</div>
+    </div>
+
+    <h3 id="vege">Wegetariańskie</h3>
+    <div class="menu">
+      <div class="card"><strong>Paneer Butter Masala</strong><p>Ser paneer</p>34 zł</div>
+      <div class="card"><strong>Chana Masala</strong><p>Ciecierzyca curry</p>32 zł</div>
+      <div class="card"><strong>Dal Tadka</strong><p>Soczewica</p>30 zł</div>
+    </div>
+
+    <h3 id="breads">Chleby</h3>
+    <div class="menu">
+      <div class="card"><strong>Naan</strong><p>Klasyczny</p>8 zł</div>
+      <div class="card"><strong>Garlic Naan</strong><p>Z czosnkiem</p>10 zł</div>
+      <div class="card"><strong>Roti</strong><p>Pełnoziarnisty</p>7 zł</div>
+    </div>
+
+    <h3 id="drinks">Napoje</h3>
+    <div class="menu">
+      <div class="card"><strong>Mango Lassi</strong><p>Jogurt mango</p>12 zł</div>
+      <div class="card"><strong>Masala Chai</strong><p>Herbata indyjska</p>10 zł</div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Zamów jedzenie</h2>
+    <div class="order-options">
+      <div class="card">
+        <h3>🥡 Zamów na wynos</h3>
+        <p>Odbierz swoje ulubione dania osobiście w restauracji.</p>
+        <a href="tel:123456789" class="btn">Zadzwoń i zamów</a>
+      </div>
+      <div class="card">
+        <h3>🚚 Zamów z dostawą</h3>
+        <p>Dostarczymy jedzenie prosto pod Twoje drzwi.</p>
+        <a href="mailto:kontakt@tasteofindia.pl" class="btn">Zamów online</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p><strong>Adres:</strong> ul. Przykładowa 12, Warszawa</p>
+    <p><strong>Telefon:</strong> 123 456 789</p>
+    <a class="btn" href="mailto:kontakt@tasteofindia.pl">Zarezerwuj stolik</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Taste of India – Restauracja Indyjska</p>
+  </footer>
+
+</body>
+</html>
